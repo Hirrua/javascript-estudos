@@ -1,14 +1,15 @@
 const form = document.querySelector(".formulario")
 
 form.addEventListener("submit", (evento) => {
-    evento.preventDefault()
+    evento.preventDefault() // Não recarregar a página
 
-    const inputPeso = evento.target.querySelector(".peso")
+    const inputPeso = evento.target.querySelector(".peso") // Pegar o input
     const inputAltura = evento.target.querySelector(".altura")
     
-    const peso = Number(inputPeso.value)
+    const peso = Number(inputPeso.value) // Transformar o que foi escrito no input (string) em Number
     const altura = Number(inputAltura.value)
 
+    // Verificar para não deixar os campos em brancos
     if (!peso) {
         setResultado('Peso inválido', false);
         return;
