@@ -20,4 +20,18 @@ console.log(novo);
 
 // OBS: .shift() e .unshift() altera todos os indices dos elementos dentro do array, se o array for muito grande, pode ocorrer problemas de performance
 
-const metade = nomes.slice(1, 3); // .slice() divide o array. Quero pegar os nomes 'Pietro' e 'Miguel', então utilizo o indice 1 e o 3, pois o ultimo não é contado, significa que se eu quero o indice 2 devo colocar o indice 3
+// Quero pegar os nomes 'Pietro' e 'Miguel', então utilizo o indice 1 e o 3, pois o ultimo não é contado, significa que se eu quero o indice 2 devo colocar o indice 3
+const metade = nomes.slice(1, 3); // .slice() divide o array.
+console.log(metade);
+
+// Mesmo resultado anterior, porém com número negativos
+const metadeNegativo = nomes.slice(1, -2); // Removi do final 'Heloisa' e 'Olivia'
+console.log(metadeNegativo);
+
+const nome = 'Olivia Almeida Rosario';
+const nomesString = nome.split(' '); // .split() está separando o nome e sobrenome com o espaço e tornando em um array
+console.log(nomesString);
+
+const arrayString = ['Olivia', 'Almeida', 'Rosario'];
+const nomeUnico = arrayString.join(' '); // .join() transforma o array em uma string pelo espaço, o reverso do .split()
+console.log(nomeUnico);
