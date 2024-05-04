@@ -29,5 +29,9 @@ class Smartphone extends Dipositivo {
     }
 }
 
+/*
+As classes filhas herdam tudo da classe pai
+*/
+
 const s1 = new Smartphone('IPhone', '15 Pro Max', 'Titanium natural');
 console.log(s1)
